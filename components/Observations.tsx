@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, MapPin } from 'lucide-react';
-import { OBSERVATIONS } from '../data';
-import { Observation } from '../types';
+import { OBSERVATIONS } from '../data.ts';
+import { Observation } from '../types.ts';
 
 const ObservationItem: React.FC<{ observation: Observation; onClick: () => void }> = ({ observation, onClick }) => {
   return (

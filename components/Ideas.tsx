@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
-import { IDEAS } from '../data';
-import { Idea } from '../types';
+import { IDEAS } from '../data.ts';
+import { Idea } from '../types.ts';
 
 const IdeaCard: React.FC<{ idea: Idea; onClick: () => void }> = ({ idea, onClick }) => {
   return (
@@ -49,9 +49,7 @@ const IdeaModal: React.FC<{ idea: Idea | null; onClose: () => void }> = ({ idea,
             <span className="text-xs text-[#4a6fa5] tracking-[0.3em] uppercase mb-4 block font-semibold">{idea.date}</span>
             <h2 className="text-4xl md:text-5xl font-serif mb-12 text-gray-900 leading-tight">{idea.title}</h2>
             <div className="prose prose-lg text-gray-600 font-light leading-relaxed space-y-6">
-              {idea.content.split('\n').map((para, i) => (
-                <p key={i}>{para}</p>
-              ))}
+              {idea.content.split('\n').map((para, i) => (para.trim() ? <p key={i}>{para}</p> : <br key={i} />))}
             </div>
             <div className="mt-20 flex justify-center">
               <div className="w-12 h-[1px] bg-gray-200" />

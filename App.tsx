@@ -1,10 +1,10 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { HashRouter, Routes, Route, Link, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import Home from './components/Home';
-import Ideas from './components/Ideas';
-import Observations from './components/Observations';
+import Home from './components/Home.tsx';
+import Ideas from './components/Ideas.tsx';
+import Observations from './components/Observations.tsx';
 
 const Navbar: React.FC = () => {
   const location = useLocation();
