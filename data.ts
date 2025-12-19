@@ -136,7 +136,7 @@ export const IDEAS: Idea[] = [
 export const OBSERVATIONS: Observation[] = [
   {
     id: '1',
-    imageUrl: '/xueshan.jpg',
+    imageUrl: 'https://images.unsplash.com/photo-1518005020453-1bb7470fe924?q=80&w=2070',
     location: '四川 · 四姑娘山峰顶',
     caption: '在极境中，找回呼吸',
     details: '2025年12月14日。站在海拔四千米的高度，风声是唯一的背景音。在那一刻，时间仿佛凝固，世界只剩下足下的积雪和头顶的苍穹。所谓的“准备好”，或许就是在那一刻，承认自己的渺小，却依然决定踏出下一步。',
