@@ -261,7 +261,7 @@ export const IDEAS: Idea[] = [
 export const OBSERVATIONS: Observation[] = [
   {
     id: '1',
-    imageUrl: './xueshan.jpg',
+    imageUrl: './asset/observation/xueshan.jpg',
     location: '四川 · 四姑娘山',
     caption: '在极境中，找回呼吸',
     details: '2025年冬。站在海拔四千米以上的高度，冷冽的空气穿透呼吸。在那一刻，时间仿佛凝固，世界只剩下足下的积雪、头顶的苍穹和远方的群山。所谓的“准备好”，或许就是在那一刻，承认自己的渺小，却依然决定踏出下一步。',
